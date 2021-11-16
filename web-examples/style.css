@@ -136,4 +136,25 @@ header:after {
   float: left;
 }
 
-/*// BASKET ANIMATION STYLES //*/
+/* BASKET ANIMATION STYLES */
+.zoom {
+  position: absolute;
+  top: 40px;
+  width: 40px;
+  right: 50%;
+  opacity: 0;
+  animation: addCart 1s forwards;
+}
+
+@keyframes addCart {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    right: 40px;
+  }
+}
